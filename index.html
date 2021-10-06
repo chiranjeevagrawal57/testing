@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Listing project</title>
+    <link href="/tailwind.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div
+      id="root"
+      class="
+        flex 
+        p-4 text-xl
+        bg-yellow-300
+        text-black text-opacity-80
+        font-bold
+        justify-center
+        capitalize
+        shadow-lg
+      "
+    ></div>
+    <form action="#" id="search">
+      <div class="flex justify-center p-4">
+        <input
+          id="searchtext"
+          type="text"
+          placeholder="input text"
+          class="
+            flex
+            bg-yellow-100
+            p-4
+            border-2
+            shadow-2xl
+            outline-none
+            focus:ring-offset-blue-300
+          "
+        />
+        <input
+          type="submit"
+          class="flex bg-blue-400 p-4 border-2 shadow-2xl text-white cursor-pointer"
+        />
+      </div>
+    </form>
+    <div class="flex justify-center gap-4">
+        <span id="country">country</span>
+        <span id="lat">latitude</span>
+        <span id="lon">longitude</span>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
